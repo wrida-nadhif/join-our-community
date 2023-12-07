@@ -1,0 +1,122 @@
+body {
+  background-color: hsl(180, 21%, 86%);
+}
+.container {
+  margin: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border-radius: 10px;
+  overflow: auto;
+}
+.container.card {
+  display: flex;
+}
+@media (max-width: 400px) {
+  .container .card {
+    flex-direction: column;
+  }
+}
+
+.prg {
+  line-height: 1.8;
+  background-color: whitesmoke;
+  font-family: karla, sans-serif;
+}
+.prg h2 {
+  margin-left: 10%;
+  font-size: 18px;
+  color: hsl(179, 62%, 43%);
+}
+.prg h4 {
+  margin-left: 10%;
+  color: hsl(71, 73%, 54%);
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.prg p {
+  margin-bottom: 4%;
+  margin-top: 2%;
+  margin-left: 10%;
+  line-height: 1.9;
+  color: hsl(191, 11%, 71%);
+  font-size: 16px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  font-family: karla, sans-serif;
+}
+.container.card > div {
+  flex: 1;
+}
+.card1 {
+  color: white;
+  width: 50%;
+  background-color: hsl(179, 62%, 43%);
+}
+.card1 h4 {
+  margin-left: 20%;
+  font-weight: bold;
+  font-size: 18px;
+}
+.card1 div {
+  margin-left: 20%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 5%;
+}
+.div span {
+  font-weight: bold;
+  font-size: 30px;
+}
+.div h6 {
+  margin: 0;
+  font-weight: lighter;
+  font-size: 18px;
+  color: rgb(170, 206, 236);
+}
+.card1 h5 {
+  color: rgb(221, 231, 238);
+  margin-left: 20%;
+  font-size: 16px;
+  font-weight: lighter;
+  margin-top: 5.5%;
+  margin-bottom: 0%;
+}
+.card1 button {
+  font-size: large;
+  align-items: center;
+  font-weight: bold;
+  font-family: karla, sans-serif;
+  color: white;
+  margin: 5%;
+  padding: 3% 6%;
+  border: none;
+  margin-left: 20%;
+  border-radius: 8px;
+  background-color: hsl(71, 73%, 54%);
+  width: 65%;
+}
+.card2 {
+  width: 50%;
+  background-color: hsl(180, 52%, 49%);
+}
+.card2 h4 {
+  color: rgb(246, 249, 252);
+  margin-left: 20%;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: karla, sans-serif;
+}
+.card2 p {
+  line-height: 1.8;
+  color: rgb(221, 231, 238);
+  font-family: karla, sans-serif;
+  font-size: 12px;
+  margin-left: 25%;
+}
