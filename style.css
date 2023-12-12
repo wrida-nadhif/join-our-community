@@ -1,50 +1,48 @@
 body {
   width: 1440px;
   background-color: hsl(180, 21%, 86%);
-}
-.container {
-  margin: auto;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  width: 35%;
-  border-radius: 8px;
-  overflow: auto;
-}
-.container.card {
-  display: flex;
-}
-@media (max-width: 375px) {
-  .container .card {
-    flex-direction: column;
-  }
+margin: 30% 32.5%;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  overflow: auto;
+  margin: auto;
+  width: 35%;
+}
+@media(max-width: 425px){
+  .container{
+    width: 20%;
+  }
+}
 .prg {
   line-height: 1.8;
   background-color: white;
   font-family: karla, sans-serif;
 }
+
 .prg h2 {
-  margin-left: 10%;
-  font-size: 12px;
-  color: hsl(179, 63%, 51%);
-  margin-top: 4%;
+  margin-left: 5%;
+  font-size: 20px;
+  color: hsl(179, 70%, 47%);
+  margin-top: 5%;
 }
+
 .prg h4 {
-  margin-left: 10%;
+  margin:0% 5%;
+  font-size: 16px;
   color: hsl(71, 84%, 51%);
-  font-size: 12px;
-  margin-top: 0;
-  margin-bottom: 0;
+  line-height: 1.4;
 }
 .prg p {
-  margin-bottom: 5%;
-  margin-top: 0;
-  margin-left: 10%;
+
+  margin:5%;
   line-height: 1.9;
   color: hsl(191, 11%, 71%);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .card {
@@ -53,27 +51,44 @@ body {
   font-family: karla, sans-serif;
 }
 
+@media (max-width: 425px) {
+  .container .card {
+    flex-direction: column;
+  }
+}
+
 .card1 {
-  color: white;
+  color: rgba(255, 255, 255, 0.973);
   width: 50%;
   background-color: hsl(179, 62%, 43%);
 }
+
+@media (max-width: 425px) {
+  .container .card1 {
+    width: 100%;
+    height: 35%;
+  }
+  .container .card1 button {
+    margin-bottom: 5%;
+    padding: 2% 4%;
+  }
+}
 .card1 h4 {
-  margin-top:15%;
-  margin-left: 20%;
-  font-weight: bold;
-  font-size: 12px;
+  margin-top: 10%;
+  margin-left: 10%;
+  font-weight: bolder;
+  font-size: 16px;
 }
 .card1 div {
-  margin-left: 20%;
+  margin-left: 10%;
   display: flex;
   justify-content: left;
   align-items: center;
   gap: 5%;
 }
 .div span {
-  font-weight: bold;
-  font-size: 20px;
+  font-weight:lighter;
+  font-size: 35px;
 }
 .div h6 {
   margin: 0;
@@ -83,7 +98,7 @@ body {
 }
 .card1 h5 {
   color: rgb(221, 231, 238);
-  margin-left: 20%;
+  margin-left: 10%;
   font-size: 12px;
   font-weight: lighter;
   margin-top: 5%;
@@ -91,33 +106,49 @@ body {
 }
 .card1 button {
   align-items: center;
-  font-weight: bold;
+  font-weight:bolder;
   font-family: karla, sans-serif;
   color: white;
-  margin: 0% 10% ;
-  padding: 4% 6%;
+  margin: 10% 10%;
+  padding: 5% 6%;
   border: none;
-  margin-left: 20%;
+  margin-left: 10%;
   border-radius: 4px;
   background-color: hsl(71, 73%, 54%);
-  width: 70%;
+  width: 72%;µ
+  margin-bottom: 10%;
+  margin-top: 5%;
 }
 .card2 {
   width: 50%;
   background-color: hsl(180, 52%, 49%);
 }
+
+@media (max-width: 425px) {
+  .container .card2 {
+    width: 100%;
+  }
+  .container .card2 P {
+    margin-bottom: 10%;
+  }
+}
 .card2 h4 {
-  margin-top: 15%;
+  margin-top: 10%;
   color: rgb(246, 249, 252);
-  margin-left: 15%;
+  margin-left: 10%;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 16px;
   font-family: karla, sans-serif;
 }
 .card2 p {
-  line-height: 1.2;
+  line-height: 1.8;
   color: rgb(221, 231, 238);
   font-family: karla, sans-serif;
-  font-size: 12px;
-  margin-left: 15%;
+  font-size: 11px;
+  margin-left: 10%;
+}
+@media(max-width:425px){
+  .card2 p {
+    line-height: 1.4;
+  }
 }
